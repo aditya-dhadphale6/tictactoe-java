@@ -1,0 +1,22 @@
+# Ignore everything that should NOT be sent to Render during Docker build
+.idea/
+.vscode/
+out/
+bin/
+target/
+*.iml
+*.class
+*.log
+*.tmp
+*.bat
+*.sh
+
+# Node / OS junk
+node_modules/
+npm-debug.log
+.DS_Store
+Thumbs.db
+
+# Exclude IDE temp configs
+*.swp
+*.swo
