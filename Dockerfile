@@ -13,8 +13,8 @@ RUN mkdir -p out \
 RUN jar cfe tictactoe.jar com.example.tictactoe.Main -C out .
 
 # --- runtime stage ---
-FROM eclipse-temurin:24-jdk-jammy AS runtime
-WORKDIR /app
+FROM eclipse-temurin:24-jdk AS runtime
+
 
 # Copy jar and static files from build stage
 COPY --from=build /app/tictactoe.jar ./tictactoe.jar
